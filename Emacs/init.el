@@ -3881,6 +3881,11 @@ defined as lowercase."
 (use-package lsp-python
   :disabled)
 
+(use-package python-coverage
+  :load-path "lisp/"
+  :demand t
+  :after python)
+
 (use-package python-black
   :demand t
   :after python
